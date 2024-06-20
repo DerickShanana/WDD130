@@ -1,0 +1,39 @@
+/* Limit width of main content */
+main {
+  max-width: 800px; /* Adjust as per your design */
+  margin: 0 auto; /* Center align main content */
+}
+
+/* Style for the aside element */
+aside {
+  width: 300px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333; /* Ensure sufficient contrast with background */
+}
+
+/* Style for image inside aside */
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for existing profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Adjust padding for all paragraphs */
+p {
+  padding: 0;
+}
+
+/* Style for footer */
+footer {
+  margin-top: 20px; /* Add margin to separate from main content */
+  border-top: 1px solid #ccc; /* Add top border for distinction */
+  text-align: center; /* Align text to center within footer */
+}
