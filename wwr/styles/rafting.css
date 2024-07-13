@@ -1,0 +1,91 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #ff6347;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sociallinks a img {
+    width: 24px;
+    height: 24px;
+}
+
+.sociallinks a {
+    margin: 0 0.5rem;
+}
