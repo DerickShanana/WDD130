@@ -20,11 +20,22 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -68,8 +79,23 @@ nav a {
     margin: 0 0 1rem 1rem;
 }
 
-section {
+.history, .adventures {
     padding: 2rem;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.adventures figure {
+    margin: 0;
+}
+
+.adventures figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 footer {
