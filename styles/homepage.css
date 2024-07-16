@@ -1,80 +1,60 @@
-/* Limit width of main content */
+/* Combined rule for header, grid, footer */
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Flexbox for navigation links */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; /* shorthand for white */
+}
+
+/* Bottom border for h1 element */
+h1 {
+  border-bottom: 2px solid #000;
+}
+
+/* Grid container */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: start;
+}
+
 main {
-<<<<<<< HEAD
-  max-width: 800px; /* Adjust as per your design */
-  margin: 0 auto; /* Center align main content */
+  grid-column: 2 / 3;
+  margin: 1rem;
 }
 
-/* Style for the aside element */
 aside {
-  width: 300px;
-  margin: 20px 0;
-  border: 1px solid #ccc;
-  padding: 20px;
+  width: 20rem;
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* Additional styles */
+.box {
+  padding: 1rem;
   background-color: #f0f0f0;
-  color: #333; /* Ensure sufficient contrast with background */
+  border: 1px solid #ddd;
 }
 
-/* Style for image inside aside */
-aside img {
-  width: 100%;
+.box img {
+  max-width: 100%;
   height: auto;
 }
-
-/* Style for existing profile image inside main */
-main img {
-  width: 150px;
-  height: auto;
-}
-
-/* Adjust padding for all paragraphs */
-p {
-  padding: 0;
-}
-
-/* Style for footer */
-footer {
-  margin-top: 20px; /* Add margin to separate from main content */
-  border-top: 1px solid #ccc; /* Add top border for distinction */
-  text-align: center; /* Align text to center within footer */
-}
-=======
-    max-width: 800px; /* Adjust as per your design */
-    margin: 0 auto; /* Center align main content */
-  }
-  
-  /* Style for the aside element */
-  aside {
-    width: 300px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f0f0f0;
-    color: #333; /* Ensure sufficient contrast with background */
-  }
-  
-  /* Style for image inside aside */
-  aside img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Style for existing profile image inside main */
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  /* Adjust padding for all paragraphs */
-  p {
-    padding: 0;
-  }
-  
-  /* Style for footer */
-  footer {
-    margin-top: 20px; /* Add margin to separate from main content */
-    border-top: 1px solid #ccc; /* Add top border for distinction */
-    text-align: center; /* Align text to center within footer */
-  }
-  
->>>>>>> 77dd68e2e7e44457bccf886a7c82f949b47cfaca
