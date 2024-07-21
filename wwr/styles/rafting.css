@@ -1,45 +1,58 @@
-/* Example CSS additions */
-.contact-info {
+/* Trips Page Styles */
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.call-to-action {
+    text-align: center;
     margin: 20px 0;
 }
 
-.team {
+.call-to-action .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trips {
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 0;
 }
 
-.team figure {
+.trip {
+    width: 30%;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.contact-form {
-    margin: 20px 0;
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
+.trips-table {
+    padding: 20px;
 }
 
-.contact-form label {
-    margin: 10px 0 5px;
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.contact-form input, 
-.contact-form textarea, 
-.contact-form button {
-    padding: 10px;
-    margin-bottom: 15px;
+.trips-table th, .trips-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
-.contact-form button {
-    background-color: var(--accent-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: darken(var(--accent-color), 10%);
+.trips-table th {
+    background-color: #f2f2f2;
 }
